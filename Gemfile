@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'factory_girl_rails'
+gem 'rails-controller-testing'
 gem 'database_cleaner'
 gem 'unicorn'
 gem 'rails_12factor', group: :production

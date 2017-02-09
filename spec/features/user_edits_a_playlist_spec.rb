@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature "user edits a playlist" do
-  scenario "they see the page for the individual playlist" do
+  xscenario "they see the page for the individual playlist" do
 
     song_one, song_two, song_three = create_list(:song, 3)
     playlist1 = create(:playlist)
@@ -10,7 +10,6 @@ RSpec.feature "user edits a playlist" do
     visit playlist_path(playlist1)
     click_on "Edit"
     fill_in "playlist_name", with: "Running"
-    byebug
     check("song-#{song_one.id}")
     check("song-#{song_three.id}")
     click_on "Update Playlist"
